@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #003147;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation ul li:hover{
+    background: #03a9f4;
+}
+
+.navigation ul li:nth-child(1){
+    margin-bottom: 20px;
+}
+.navigation ul li:nth-child(1):hover{
+    background: transparent;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px; /*met l espace entre les icons et les ecritures*/
+    height: 60px;   /*met l espace entre les ecriture sur la hauteur*/
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .icon .fa{
+    color: #fff;
+    font-size: 24px;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height:60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: #f5f5f5;
+    transition: 0.5s;
+}
+.main.active{
+    width: calc(100% - 60px);
+}
+.main .topbar{
+    width: 100%;
+    background: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    
+    cursor: pointer;
+    
+}
+
+.toggle::before{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: #111;
+}
+#Dashboard{
+    margin-left: 15%;
+}
+
+.main-part{
+    width:80%;
+    margin:0 auto;
+    text-align: center;
+    padding: 0px 5px;
+    }
+    .cpanel{
+    width:32%;
+    display: inline-block;
+    background-color:#34495E;
+    color:#fff;
+    margin-top: 50px;
+    }
+    .icon-part i{
+    font-size: 30px;
+    padding:10px;
+    border:1px solid #fff;
+    border-radius:50%;
+    margin-top:-25px;
+    margin-bottom: 10px;
+    background-color:#34495E;
+    }
+    .icon-part p{
+    margin:0px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    }
+    .card-content-part{
+    background-color: #2F4254;
+    padding: 5px 0px;
+    }
+    .cpanel .card-content-part:hover{
+    background-color: #5a5a5a;
+    cursor: pointer;
+    }
+    .card-content-part a{
+    color:#fff;
+    text-decoration: none;
+    }
+    .cpanel-green .icon-part,.cpanel-green .icon-part i{
+    background-color: #16A085;
+    }
+    .cpanel-green .card-content-part{
+    background-color: #149077;
+    }
+    .cpanel-orange .icon-part,.cpanel-orange .icon-part i{
+    background-color: #F39C12;
+    }
+    .cpanel-orange .card-content-part{
+    background-color: #DA8C10;
+    }
+    .cpanel-blue .icon-part,.cpanel-blue .icon-part i{
+    background-color: #2980B9;
+    }
+    .cpanel-blue .card-content-part{
+    background-color:#2573A6;
+    }
+    .cpanel-red .icon-part,.cpanel-red .icon-part i{
+    background-color:#E74C3C;
+    }
+    .cpanel-red .card-content-part{
+    background-color:#CF4436;
+    }
+    .cpanel-skyblue .icon-part,.cpanel-skyblue .icon-part i{
+    background-color:#8E44AD;
+    }
+    .cpanel-skyblue .card-content-part{
+    background-color:#803D9B;
+    }
+
+    /**  student ########################################################################*/
+    #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 70%;
+      }
+      
+      #customers td, #customers th {
+        border: 1px solid #ddd;
+        padding: 4px;
+      }
+      
+      #customers tr:nth-child(even){background-color: #f2f2f2;}
+      
+      #customers tr:hover {background-color: #ddd;}
+      
+      #customers th {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        text-align: left;
+        background-color: #003147;
+        color: white;
+      }
+
+      #student{
+          padding-top: 5%;
+          margin-left: 30%;
+          padding-bottom: 15px;
+      }
+
+      .center{
+          padding-top: 8%;
+          text-align: center;
+      }
+
+      
+body, html {
+    background: #ECEDEF;
+    margin: 0;
+    padding: 0;
+}
+
